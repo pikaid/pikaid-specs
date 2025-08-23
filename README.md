@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="pikaid logo" width="300" />
+  <img src="https://raw.githubusercontent.com/pikaid/pikaid-specs/refs/heads/main/logo.png" alt="pikaid logo" width="300" />
 </p>
 
 # Pikaid Specifications *v1.0.0*
