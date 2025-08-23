@@ -23,6 +23,22 @@ Use pikaid when you need a modern alternative to UUID or ULID that is equally co
 * **Timestamp (7 chars)**: seconds since 1970-01-01T00:00:00Z (UTC), Base36-encoded and left-padded to 7 chars.
 * **Randomness (19 chars)**: 96 bits from a cryptographically secure generator, Base36-encoded and left-padded to 19 chars.
 
+### 1.1 Binary Layout (BINARY(17))
+
+Pikaid also has a **compact 17-byte binary representation** for storage efficiency and high-performance indexing in databases.
+
+**Layout (big-endian):**
+
+| Byte Range | Description           | Size | Notes                                   |
+|------------|----------------------|-------|-----------------------------------------|
+| `0..4`     | Timestamp (seconds)  | 5 B   | Unsigned 40-bit integer, big-endian     |
+| `5..16`    | Randomness (entropy) | 12 B  | 96 bits of cryptographically secure data |
+
+- **Ordering guarantee**: Binary lexicographic order equals chronological order by second.
+- **Compatibility**: The binary form is a 1:1 mapping of the 26-character string and supports round-trip conversion.
+- **Timestamp range**: Fully supports the same range as the string form — up to year ~4463 (matching the 7-character base36 timestamp).
+- **Randomness**: Always 12 bytes (96 bits), exactly matching the entropy in the string form.
+
 ## 2. Why Each Design Decision?
 
 ### 2.1 Alphabet: Standard Base36, Lowercase
