@@ -36,7 +36,7 @@ Pikaid also has a **compact 17-byte binary representation** for storage efficien
 
 - **Ordering guarantee**: Binary lexicographic order equals chronological order by second.
 - **Compatibility**: The binary form is a 1:1 mapping of the 26-character string and supports round-trip conversion.
-- **Timestamp range**: Fully supports the same range as the string form — up to year ~4463 (matching the 7-character base36 timestamp).
+- **Timestamp range**: Fully supports the same range as the string form — up to year ~4453 (matching the 7-character base36 timestamp).
 - **Randomness**: Always 12 bytes (96 bits), exactly matching the entropy in the string form.
 
 ## 2. Why Each Design Decision?
@@ -50,7 +50,7 @@ Pikaid also has a **compact 17-byte binary representation** for storage efficien
 ### 2.2 Timestamp Length: 7 Characters
 
 * **Decision**: 7 Base36 chars representing seconds since epoch UTC, left padded.
-* **Rationale**: seconds precision for accurate sort order; 7 chars covers up to year \~4463, far beyond any foreseeable need. Left padded to keep proper sorting.
+* **Rationale**: seconds precision for accurate sort order; 7 chars covers up to year \~4453, far beyond any foreseeable need. Left padded to keep proper sorting.
 
 ### 2.3 Randomness: 96 Bits
 
@@ -60,7 +60,7 @@ Pikaid also has a **compact 17-byte binary representation** for storage efficien
 ### 2.4 No Separators or Checksum
 
 * **Decision**: a continuous 26-char string without dashes or extra checks.
-* **Rationale**: minimal overhead; 96-bit entropy makes accidental valid-typo collisions virtually zero.
+* **Rationale**: minimal overhead; 96-bit entropy makes accidental accidental typo collisions virtually zero.
 
 ### 2.5 Implicit Versioning by Length
 
@@ -74,7 +74,7 @@ To parse a pikaid string:
 1. **Length check**: must be exactly 26 chars.
 2. **Character check**: match `/^[0-9a-z]{26}$/`.
 3. **Split**: first 7 chars = timestamp, next 19 chars = randomness.
-4. **Decode timestamp**: Base36 → integer ms → timestamp object.
+4. **Decode timestamp**: Base36 → integer seconds → timestamp object.
 5. **Error**: throw or reject on any invalid input.
 
 ## 4. Why Choose pikaid Over Others?
@@ -91,7 +91,7 @@ To parse a pikaid string:
 
 | Format     | Length | Sortable | Random Bits | Alphabet           | Valid Until (ms) | Notes                                    |
 | ---------- | :----: | :------: | :---------: | ------------------ | ---------------- | ---------------------------------------- |
-| **pikaid** |   26   |   Yes    |     96      | Base36 (lowercase) | \~year 4463      | Compact, high entropy, standard alphabet |
+| **pikaid** |   26   |   Yes    |     96      | Base36 (lowercase) | \~year 4453      | Compact, high entropy, standard alphabet |
 | UUIDv1     |   36   |   Yes    |     14      | hex + dashes       | N/A              | low randomness, MAC-based                |
 | UUIDv4     |   36   |    No    |     122     | hex + dashes       | N/A              | high entropy, not time-sortable          |
 | UUIDv6     |   36   |   Yes    |     62      | hex + dashes       | N/A              | reordered-v1, moderate entropy           |
@@ -133,7 +133,7 @@ Compliant implementations **MUST** support a compact **17-byte** binary represen
   - the **26-character** string form, and
   - the **17-byte** binary form defined above.
 - The binary buffer length **MUST** be **exactly 17 bytes**; any other length **MUST** be rejected.
-- The 5-byte timestamp field **MUST** be encoded **big-endian** and **MUST** represent seconds in the full 40-bit range supported by the 7-char Base36 timestamp, ensuring chronological coverage up to ~year **4463**.
+- The 5-byte timestamp field **MUST** be encoded **big-endian** and **MUST** represent seconds in the full 40-bit range supported by the 7-char Base36 timestamp, ensuring chronological coverage up to ~year **4453**.
 - The 12-byte randomness field **MUST** be preserved verbatim; no bit truncation, expansion, or re-encoding is permitted.
 - Both string and binary forms **MUST** preserve **lexicographic ordering by creation time (second precision)**. Any change to padding, byte order, alphabet, or field sizes that breaks this ordering **MUST NOT** be done in compliant implementations.
 - When exposing database types, implementations **SHOULD** map the binary form to a fixed-length `BINARY(17)` (or equivalent) column for optimal indexing and storage.
@@ -148,7 +148,7 @@ Compliant implementations **MUST** support a compact **17-byte** binary represen
 - Implementations **MUST** validate input strings as follows:
   - Length is exactly **26** characters.
   - Characters match the regex `/^[0-9a-z]{26}$/`.
-  - The timestamp decodes to an integer within the valid 32-bit unsigned range (`0` ≤ `timestamp` ≤ `4294967295`).
+  - The timestamp decodes to an integer within the valid 32-bit unsigned range (`0` ≤ `timestamp` ≤ `36^7 - 1`).
 - Invalid inputs **MUST** result in an error or exception — silent failure is **NOT** allowed.
 
 ---
@@ -188,7 +188,7 @@ Compliant implementations **MUST** support a compact **17-byte** binary represen
 - Implementations **MAY** provide:
   - Generation from a fixed timestamp (e.g., for deterministic testing).
   - Pretty-print or debug utilities.
-  - Additional database helpers (e.g., mapping to/from `BINARY(16)`).
+  - Additional database helpers (e.g., mapping to/from `BINARY(17)`).
 
 These **MAY NOT** alter the base generation, parsing, or validation logic defined above.
 
