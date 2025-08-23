@@ -83,27 +83,36 @@ To parse a pikaid string:
 | ULID       |   26   |   Yes    |     80      | Crockford Base32   | \~year 10889     | sortable, less randomness, custom set    |
 | NanoID     |   21   |    No    |    \~128    | custom 64-char set | N/A              | very high entropy, not sorted by time    |
 
-
 *Please refer to individual specs for exact entropy calculations and alphabet details.*
 
 ---
----
-> With these clear rules and rationale, any implementation, regardless of language, can generate and consume **pikaid** values that interoperate seamlessly.
----
+
+## **Conclusion**
+
+With these **clear, language-agnostic rules** and a **simple, consistent design**, any implementation — in **PHP, JavaScript, Python, Go, Rust**, or any other language — can generate and consume **pikaid** values that are **fully interoperable** across platforms, databases, and services.
+
+**Pikaid** delivers the perfect balance of being **compact**, **sortable**, and **secure**, making it a **modern, reliable replacement** for UUID and ULID in production systems.
+
 ---
 
 # Extra
 
 ## Benchmark
 
-### PHP 100 000 iteration
- 
-| Library    | Implementation        |  Total ms |     µs/op |    Ratio |
-| :--------- | :-------------------- | --------: | --------: | -------: |
-| **Pikaid** | **pikaid/pikaid-php** | **78.75** | **0.787** | **1.00** |
-| UUIDv1     | ramsey/uuid           |    641.41 |     6.414 |     8.15 |
-| UUIDv4     | ramsey/uuid           |    129.63 |     1.296 |     1.65 |
-| UUIDv6     | ramsey/uuid           |    670.78 |     6.708 |     8.52 |
-| UUIDv7     | ramsey/uuid           |    260.71 |     2.607 |     3.31 |
-| ULID       | robinvdvleuten/ulid   |    192.79 |     1.928 |     2.45 |
-| NanoID     | hidehalo/nanoid-php   |    192.79 |     1.928 |     2.45 |
+### PHP 60k iterations
+
+| Library    | Implementation        | Median µs/op | Ratio |
+| :--------- | :-------------------- | -----------: | -----: |
+| **Pikaid** | **pikaid/pikaid-php** | **0.9**      | **1.0** |
+| NanoID     | hidehalo/nanoid-php   | 2.1          | 2.4     |
+| ULID       | robinvdvleuten/ulid   | 2.0          | 2.4     |
+| UUIDv1     | ramsey/uuid           | 5.0          | 5.9     |
+| UUIDv4     | ramsey/uuid           | 1.3          | 1.6     |
+| UUIDv6     | ramsey/uuid           | 5.4          | 6.4     |
+| UUIDv7     | ramsey/uuid           | 2.7          | 3.2     |
+> **Benchmark context**  
+> - 30 passes × 60,000 iterations per subject  
+> - Warm-up per subject: 60,000 iterations  
+> - PHP 8.3.6 with `ext-gmp` enabled  
+> - CPU: AMD Ryzen 7 5800X, 32 GB DDR4 3200 MHz  
+> - OS: Microsoft Windows 11 Pro 23H2 (build 22631)
