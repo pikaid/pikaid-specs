@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/pikaid/pikaid-specs/refs/heads/main/logo.png" alt="pikaid logo" width="300" />
 </p>
 
-# Pikaid Specifications *v1.0.1*
+# Pikaid Specifications *v1.0.2*
 
 > Small · Sortable · Secure IDs
 > 
@@ -55,7 +55,7 @@ Pikaid also has a **compact 17-byte binary representation** for storage efficien
 ### 2.3 Randomness: 96 Bits
 
 * **Decision**: 12 bytes → exactly 96 bits of entropy, encoded in 19 Base36 chars.
-* **Rationale**: 2⁹⁶ ≈ 7.9×10²⁸ possibilities; collision birthday bound ≈2⁴⁸ (\~2.8×10¹⁴ IDs) is far beyond realistic generation rates.
+* **Rationale**: 36¹⁹ ≈ 2.27×10²⁹ possibilities; the 50% birthday bound is around √36¹⁹ ≈ 1.51×10¹⁴ IDs, which is far beyond any realistic generation rate.
 
 ### 2.4 No Separators or Checksum
 
