@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/pikaid/pikaid-specs/refs/heads/main/logo.png" alt="pikaid logo" width="300" />
 </p>
 
-# Pikaid Specifications *v1.0.2*
+# Pikaid Specifications *v1.0.3*
 
 > Small · Sortable · Secure IDs
 > 
@@ -230,3 +230,33 @@ With these **clear, language-agnostic rules** and a **simple, consistent design*
 > - PHP 8.3.6 with `ext-gmp` enabled  
 > - CPU: AMD Ryzen 7 5800X, 32 GB DDR4 3200 MHz  
 > - OS: Microsoft Windows 11 Pro 23H2 (build 22631)
+
+---
+
+## 📄 License
+
+PikaID is free specification text and reference software licensed under the **GNU Lesser General Public License, version 3 or any later version (`LGPL-3.0-or-later`)**.
+
+> **In practical terms:** you can use, study, implement, and integrate the PikaID specification and reference code in both open-source and proprietary projects. You can build your own implementation, including commercial or closed-source software, without having to release your whole application under the LGPL.
+
+The main condition is about the **specification text and reference implementation in this repository**:
+
+- if you distribute a modified version of the **PikaID specification text** from this repository,
+- or a modified version of the **PikaID reference code** from this repository,
+- those modifications must remain available under the LGPL.
+
+Important clarification:
+
+- the LGPL applies to the **text and code in this repository**,
+- it does **not automatically require** every independent implementation of the PikaID protocol/specification to be licensed under the LGPL,
+- as long as that implementation does not copy protected text or code from this repository.
+
+This is an intentional choice: the goal is to keep the specification and reference implementation easy to adopt in real-world projects while ensuring that improvements to the specification text and core reference code are contributed back when they are distributed.
+
+For the exact legal terms, see the [LICENSE](LICENSE) file.
+
+---
+
+## ✉️ Contact
+
+For licensing or project-related questions: [larananas.dev@proton.me](mailto:larananas.dev@proton.me)
