@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="590" viewBox="0 0 1320 590" role="img" aria-labelledby="title description">
+<title id="title">pikaid identifier structure</title>
+<desc id="description">A 26-character lowercase Base36 identifier: seven timestamp characters in blue and nineteen randomness characters in green. The binary form is seventeen bytes: five bytes for the timestamp and twelve bytes for randomness.</desc>
+<rect width="1320" height="590" rx="24" fill="#121212"/>
+<rect x="2" y="2" width="1316" height="586" rx="22" fill="none" stroke="#38332D" stroke-width="2"/>
+<g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+ <text x="86" y="93" fill="#F97316" font-size="56" font-weight="750" letter-spacing="-2.2">pikaid</text>
+ <text x="88" y="132" fill="#FFF5E0" font-size="20" font-weight="500">Identifier anatomy</text>
+ <rect x="910" y="58" width="310" height="50" rx="25" fill="#2B211A" stroke="#8C4F24" stroke-width="2"/>
+ <text x="1065" y="90" fill="#FFCA9A" font-size="17" font-weight="600" text-anchor="middle">26 lowercase Base36 chars</text>
+ <text x="86" y="181" fill="#B9B6B0" font-size="17">Example identifier</text>
+ <rect x="86" y="201" width="1148" height="97" rx="20" fill="#181A1C" stroke="#F97316" stroke-width="3"/>
+</g>
+<rect x="110" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="129" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">0</text>
+<rect x="152" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="171" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">s</text>
+<rect x="194" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="213" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">w</text>
+<rect x="236" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="255" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">c</text>
+<rect x="278" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="297" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">t</text>
+<rect x="320" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="339" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">4</text>
+<rect x="362" y="222" width="38" height="54" rx="7" fill="#172B3C" stroke="#346891" stroke-width="1.2"/>
+<text x="381" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">q</text>
+<rect x="404" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="423" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">0</text>
+<rect x="446" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="465" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">1</text>
+<rect x="488" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="507" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">c</text>
+<rect x="530" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="549" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">h</text>
+<rect x="572" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="591" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">8</text>
+<rect x="614" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="633" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">3</text>
+<rect x="656" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="675" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">h</text>
+<rect x="698" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="717" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">9</text>
+<rect x="740" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="759" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">1</text>
+<rect x="782" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="801" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">o</text>
+<rect x="824" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="843" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">n</text>
+<rect x="866" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="885" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">l</text>
+<rect x="908" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="927" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">6</text>
+<rect x="950" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="969" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">l</text>
+<rect x="992" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="1011" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">4</text>
+<rect x="1034" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="1053" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">7</text>
+<rect x="1076" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="1095" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">v</text>
+<rect x="1118" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="1137" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">b</text>
+<rect x="1160" y="222" width="38" height="54" rx="7" fill="#1A3323" stroke="#397748" stroke-width="1.2"/>
+<text x="1179" y="258" font-size="27" font-weight="650" text-anchor="middle" fill="#FFF5E0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">6</text>
+
+<g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+ <path d="M 255 300 V 323" stroke="#56A2E7" stroke-width="2.5" stroke-linecap="round"/>
+ <circle cx="255" cy="324" r="4" fill="#56A2E7"/>
+ <text x="255" y="361" fill="#56A2E7" font-size="27" font-weight="700" text-anchor="middle">Timestamp</text>
+ <text x="255" y="389" fill="#C4C6C9" font-size="18" text-anchor="middle">7 chars · Unix seconds</text>
+ <path d="M 801 300 V 323" stroke="#58B970" stroke-width="2.5" stroke-linecap="round"/>
+ <circle cx="801" cy="324" r="4" fill="#58B970"/>
+ <text x="801" y="361" fill="#58B970" font-size="27" font-weight="700" text-anchor="middle">Randomness</text>
+ <text x="801" y="389" fill="#C4C6C9" font-size="18" text-anchor="middle">19 chars · 96 cryptographic bits</text>
+ <line x1="86" y1="430" x2="1234" y2="430" stroke="#3B3935" stroke-width="1.5"/>
+ <text x="87" y="465" fill="#F97316" font-size="16" font-weight="700" letter-spacing="1.1">BINARY FORM</text>
+ <text x="1230" y="465" fill="#C4C6C9" font-size="16" text-anchor="end">17 bytes · big-endian timestamp</text>
+ <rect x="86" y="484" width="338" height="55" rx="11" fill="#172B3C" stroke="#346891" stroke-width="1.5"/>
+ <rect x="436" y="484" width="798" height="55" rx="11" fill="#1A3323" stroke="#397748" stroke-width="1.5"/>
+ <text x="255" y="519" fill="#FFF5E0" font-size="21" font-weight="600" text-anchor="middle">5 bytes · timestamp</text>
+ <text x="835" y="519" fill="#FFF5E0" font-size="21" font-weight="600" text-anchor="middle">12 bytes · randomness</text>
+</g>
+</svg>
