@@ -14,7 +14,7 @@ pikaid is a compact, chronologically sortable identifier for databases, APIs, an
 The identifier format is deliberately simple and stable. **Specification revisions describe and clarify that same format; they do not version or change the identifiers.**
 
 - **Canonical specification:** this repository.
-- **Official implementation:** [PHP](https://github.com/pikaid/pikaid-php).
+- **Official implementations:** See the [pikaid GitHub organization](https://github.com/pikaid) for the current list of official implementations.
 
 ## 1. Identifier anatomy
 
