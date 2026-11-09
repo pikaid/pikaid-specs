@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "valid.schema.json",
+  "title": "PikaID conformance valid cases",
+  "type": "object",
+  "properties": {
+    "suite": {
+      "const": "valid"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9-]+$"
+          },
+          "requirement_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]+-[0-9]{3}$"
+            }
+          },
+          "timestamp_seconds": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 78364164095
+          },
+          "randomness_hex": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{24}$"
+          },
+          "pikaid": {
+            "type": "string",
+            "pattern": "^[0-9a-z]{26}$"
+          },
+          "binary_hex": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{34}$"
+          },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "requirement_refs",
+          "timestamp_seconds",
+          "randomness_hex",
+          "pikaid",
+          "binary_hex"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "suite",
+    "cases"
+  ],
+  "additionalProperties": false
+}

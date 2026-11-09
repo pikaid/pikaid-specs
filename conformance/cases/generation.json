@@ -1,0 +1,151 @@
+{
+  "suite": "generation",
+  "cases": [
+    {
+      "id": "G-CURRENT-STRING",
+      "mode": "current_string",
+      "scope": "mandatory",
+      "iteration_count": 64,
+      "requirement_refs": [
+        "TS-001",
+        "FMT-001",
+        "FMT-002",
+        "RNG-001"
+      ],
+      "timestamp_seconds": null,
+      "expected": "canonical_valid_id_timestamp_between_clock_bounds"
+    },
+    {
+      "id": "G-TIMESTAMP-ZERO",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 8,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 0,
+      "expected": "canonical_valid_id_with_exact_timestamp"
+    },
+    {
+      "id": "G-TIMESTAMP-ONE",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 8,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 1,
+      "expected": "canonical_valid_id_with_exact_timestamp"
+    },
+    {
+      "id": "G-TIMESTAMP-SAMPLE",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 8,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 1700000000,
+      "expected": "canonical_valid_id_with_exact_timestamp"
+    },
+    {
+      "id": "G-TIMESTAMP-MAX",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 8,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 78364164095,
+      "expected": "canonical_valid_id_with_exact_timestamp"
+    },
+    {
+      "id": "G-TIMESTAMP-BELOW",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 1,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": -1,
+      "expected": "reject"
+    },
+    {
+      "id": "G-TIMESTAMP-ABOVE",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 1,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 78364164096,
+      "expected": "reject"
+    },
+    {
+      "id": "G-TIMESTAMP-FAR-ABOVE",
+      "mode": "caller_supplied_string",
+      "scope": "conditional",
+      "iteration_count": 1,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "timestamp_seconds": 1099511627776,
+      "expected": "reject"
+    },
+    {
+      "id": "G-CURRENT-BINARY",
+      "mode": "current_binary",
+      "scope": "conditional",
+      "iteration_count": 64,
+      "requirement_refs": [
+        "GENB-001",
+        "BIN-001"
+      ],
+      "timestamp_seconds": null,
+      "expected": "canonical_valid_binary_timestamp_between_clock_bounds"
+    },
+    {
+      "id": "G-BINARY-WITH-TIMESTAMP-MAX",
+      "mode": "caller_supplied_binary",
+      "scope": "conditional",
+      "iteration_count": 8,
+      "requirement_refs": [
+        "GENT-001",
+        "GENB-001"
+      ],
+      "timestamp_seconds": 78364164095,
+      "expected": "canonical_valid_binary_with_exact_timestamp"
+    },
+    {
+      "id": "G-BINARY-WITH-TIMESTAMP-BELOW",
+      "mode": "caller_supplied_binary",
+      "scope": "conditional",
+      "iteration_count": 1,
+      "requirement_refs": [
+        "GENT-001",
+        "GENB-001"
+      ],
+      "timestamp_seconds": -1,
+      "expected": "reject"
+    },
+    {
+      "id": "G-BINARY-WITH-TIMESTAMP-ABOVE",
+      "mode": "caller_supplied_binary",
+      "scope": "conditional",
+      "iteration_count": 1,
+      "requirement_refs": [
+        "GENT-001",
+        "GENB-001"
+      ],
+      "timestamp_seconds": 78364164096,
+      "expected": "reject"
+    }
+  ]
+}

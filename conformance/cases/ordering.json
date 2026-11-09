@@ -1,0 +1,2841 @@
+{
+  "suite": "ordering",
+  "cases": [
+    {
+      "id": "O-CROSS-TS-00",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000010000000000000000000",
+      "a_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000001000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-00-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000010000000000000000000",
+      "b_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000001000000000000000000000000",
+      "b_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-00",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "00000000000000000000000000",
+      "b_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000000000000000000000000000000",
+      "b_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-00-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000000000000000000000000",
+      "a_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000000000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-00",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000007oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000000ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-01",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000020000000000000000000",
+      "a_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000002000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-01-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000020000000000000000000",
+      "b_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000002000000000000000000000000",
+      "b_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-01",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "00000010000000000000000000",
+      "b_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000001000000000000000000000000",
+      "b_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-01-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000010000000000000000000",
+      "a_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000001000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-01",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000017oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000001ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-02",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000100000000000000000000",
+      "a_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000024000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-02-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000100000000000000000000",
+      "b_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000024000000000000000000000000",
+      "b_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-02",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "000000z0000000000000000000",
+      "b_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000023000000000000000000000000",
+      "b_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-02-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "000000z0000000000000000000",
+      "a_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000023000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-02",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "000000z7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000023ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-03",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000110000000000000000000",
+      "a_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000025000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-03-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000110000000000000000000",
+      "b_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000025000000000000000000000000",
+      "b_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-03",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "00000100000000000000000000",
+      "b_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000024000000000000000000000000",
+      "b_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-03-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000100000000000000000000",
+      "a_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000024000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-03",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000107oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000024ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-04",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000740000000000000000000",
+      "a_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "b_binary_hex": "0000000100000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-04-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000740000000000000000000",
+      "b_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000100000000000000000000000000",
+      "b_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-04",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "00000730000000000000000000",
+      "b_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "00000000ff000000000000000000000000",
+      "b_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-04-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000730000000000000000000",
+      "a_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "b_binary_hex": "00000000ff000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-04",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "b_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-05",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000750000000000000000000",
+      "a_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000101000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-05-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "00000750000000000000000000",
+      "b_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000101000000000000000000000000",
+      "b_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-05",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "00000740000000000000000000",
+      "b_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000100000000000000000000000000",
+      "b_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-05-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000740000000000000000000",
+      "a_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000100000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-05",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000747oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000100ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-06",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zk0000000000000000000",
+      "a_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "b_binary_hex": "0080000000000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-06-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "0zik0zk0000000000000000000",
+      "b_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0080000000000000000000000000000000",
+      "b_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-06",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "0zik0zj0000000000000000000",
+      "b_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "007fffffff000000000000000000000000",
+      "b_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-06-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zj0000000000000000000",
+      "a_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "b_binary_hex": "007fffffff000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-06",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zj7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "b_binary_hex": "007fffffffffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-07",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zl0000000000000000000",
+      "a_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0080000001000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-07-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "0zik0zl0000000000000000000",
+      "b_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0080000001000000000000000000000000",
+      "b_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-07",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "0zik0zk0000000000000000000",
+      "b_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0080000000000000000000000000000000",
+      "b_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-07-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zk0000000000000000000",
+      "a_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0080000000000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-07",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-08",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z40000000000000000000",
+      "a_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "b_binary_hex": "0100000000000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-08-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "1z141z40000000000000000000",
+      "b_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0100000000000000000000000000000000",
+      "b_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-08",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "1z141z30000000000000000000",
+      "b_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "00ffffffff000000000000000000000000",
+      "b_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-08-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z30000000000000000000",
+      "a_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "b_binary_hex": "00ffffffff000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-08",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z37oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "b_binary_hex": "00ffffffffffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-09",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z50000000000000000000",
+      "a_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0100000001000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-09-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "1z141z50000000000000000000",
+      "b_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0100000001000000000000000000000000",
+      "b_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-09",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "1z141z40000000000000000000",
+      "b_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0100000000000000000000000000000000",
+      "b_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-09-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z40000000000000000000",
+      "a_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0100000000000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-09",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1z141z47oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "b_binary_hex": "0100000000ffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-CROSS-TS-10",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "entropy-inversion"
+      ],
+      "a_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "zzzzzzz0000000000000000000",
+      "a_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "b_binary_hex": "123ede3fff000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-CROSS-TS-10-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "timestamp-priority",
+        "reverse"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000000000",
+      "b_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3fff000000000000000000000000",
+      "b_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SAME-TS-10",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "zzzzzzy0000000000000000000",
+      "b_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3ffe000000000000000000000000",
+      "b_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-10-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "zzzzzzy0000000000000000000",
+      "a_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "b_binary_hex": "123ede3ffe000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-10",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "b_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-SAME-TS-11",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "randomness-priority"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000000000",
+      "b_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3fff000000000000000000000000",
+      "b_binary_hex": "123ede3fffffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SAME-TS-11-REV",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "same-second",
+        "reverse"
+      ],
+      "a_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "zzzzzzz0000000000000000000",
+      "a_binary_hex": "123ede3fffffffffffffffffffffffffff",
+      "b_binary_hex": "123ede3fff000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-EQUAL-11",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "equal"
+      ],
+      "a_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3fffffffffffffffffffffffffff",
+      "b_binary_hex": "123ede3fffffffffffffffffffffffffff",
+      "expected_compare": 0
+    },
+    {
+      "id": "O-SEEDED-000",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000747ogcwqewv9jhn5e9bno",
+      "b_pikaid": "zzzzzzz2k6bj8i7ihdy0s3cnkl",
+      "a_binary_hex": "0000000100ffeeddccbbaa998877665544",
+      "b_binary_hex": "123ede3fff555555555555555555555555",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-001",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000zz7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "000000z5f77te5d7cusupax2lu",
+      "a_binary_hex": "000000050fffffffffffffffffffffffff",
+      "b_binary_hex": "0000000023b4b5eda7d3fa70bc34e2b972",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-002",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00001010000000000000000001",
+      "b_pikaid": "00100007245p3fc5ue576miv48",
+      "a_binary_hex": "0000000511000000000000000000000001",
+      "b_binary_hex": "000019a100eb409d489b4cdcbb9187cc08",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-003",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0001ekg0000000000000000000",
+      "b_pikaid": "0s44we80000000000000000009",
+      "a_binary_hex": "0000010000000000000000000000000000",
+      "b_binary_hex": "006553f100000000000000000000000009",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-004",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0001ekh0000000000001z141z5",
+      "b_pikaid": "0s44we8000000000000000a000",
+      "a_binary_hex": "0000010001000000000000000100000001",
+      "b_binary_hex": "006553f100000000000000000000071e80",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-005",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0zik0zk7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0s44we8000000000000z000000",
+      "a_binary_hex": "0080000000ffffffffffffffffffffffff",
+      "b_binary_hex": "006553f1000000000000000011bd1f3000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-006",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z30000000000000000001",
+      "b_pikaid": "0s44we80000000010000000000",
+      "a_binary_hex": "00ffffffff000000000000000000000001",
+      "b_binary_hex": "006553f10000000000000cfd41b9100000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-007",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z50000000000000000000",
+      "b_pikaid": "0s44we80000090000000000000",
+      "a_binary_hex": "0100000001000000000000000000000000",
+      "b_binary_hex": "006553f1000000005339ac59fcc4000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-008",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "fs8wfsv0000000000000000011",
+      "b_pikaid": "0s44we800a0000000000000000",
+      "a_binary_hex": "07ffffffff000000000000000000000025",
+      "b_binary_hex": "006553f1000041d51ed52e710a00000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-009",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "fs8wfsx7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "1icusht4qx1cqx0nd7ng67q4yg",
+      "a_binary_hex": "0800000001ffffffffffffffffffffffff",
+      "b_binary_hex": "00c3e80fc19e3afc65f31e053a87599a98",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-010",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "hzzzzzz0000000000000000001",
+      "b_pikaid": "7twx7du3ctqg5wcmm4mb9ryn7u",
+      "a_binary_hex": "091f6f1fff000000000000000000000001",
+      "b_binary_hex": "03f809c7a26fdb6444cb574cfd7207990a",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-011",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzy0000000000000000000",
+      "b_pikaid": "ztug0g34waayxup3j6spe20p9c",
+      "a_binary_hex": "123ede3ffe000000000000000000000000",
+      "b_binary_hex": "1228b00843a3334fcf5a284cc2d54249e0",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-012",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz2k6bj8i7ihdy0s3cnkl",
+      "b_pikaid": "iy4no563io8gqu4xljydjmb58u",
+      "a_binary_hex": "123ede3fff555555555555555555555555",
+      "b_binary_hex": "099a7045fa75452b35d8e00d73d6c5414e",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-013",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000000000000000002",
+      "b_pikaid": "2xtoxxj15bqmm0iul6h9f6pum3",
+      "a_binary_hex": "0000000000000000000000000000000002",
+      "b_binary_hex": "017d6642c7264229954c874b48c30f993b",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-014",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000010",
+      "b_pikaid": "oaai7rq2ioratam4bdz6p3kj7c",
+      "a_binary_hex": "006553f100000000000000000000000024",
+      "b_binary_hex": "0c4f0129d653f4b88ed3bb80930feba538",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-015",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000000073",
+      "b_pikaid": "glen9mr4e6vraaxw66wenm6md3",
+      "a_binary_hex": "123ede3fff0000000000000000000000ff",
+      "b_binary_hex": "086917d2839272d580a74003cf85f628b7",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-016",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000000000000001ekf",
+      "b_pikaid": "x31ntmk2ozdlxy9jlefh0870ys",
+      "a_binary_hex": "000000000000000000000000000000ffff",
+      "b_binary_hex": "10c49b92bc59c89d7721520ebf4979d8a4",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-017",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000001ekh",
+      "b_pikaid": "fs8wfsx7a5s3p8abkjpiq252j7",
+      "a_binary_hex": "006553f100000000000000000000010001",
+      "b_binary_hex": "0800000001f2b3455ed2dbee316fe1e613",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-018",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000000000001z141z4",
+      "b_pikaid": "r0wd6j74234z27691zkb04q9i1",
+      "a_binary_hex": "123ede3fff000000000000000100000000",
+      "b_binary_hex": "0db2643253873e38e3c7abde6e7622e699",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-019",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000003w5e11264sgsg",
+      "b_pikaid": "ob67dtf07khu6lbu59swthwj2x",
+      "a_binary_hex": "0000000000000000010000000000000000",
+      "b_binary_hex": "0c522d93b30701e7f7bf5d0622cf1d6d99",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-020",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we83u9haurb9q2x1650zcw",
+      "b_pikaid": "smkm9e232dhuashjjau2muj1ct",
+      "a_binary_hex": "006553f100800000000000000000000000",
+      "b_binary_hex": "0e8240450a662e83fe928573938888239d",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-021",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypq",
+      "b_pikaid": "pedl7gt1od5bid65kljymh2s5w",
+      "a_binary_hex": "123ede3ffffffffffffffffffffffffffe",
+      "b_binary_hex": "0cdf79ce0d37e2601c4e87551aedd3a414",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-022",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000007ogcwqewv9jhn5e9bno",
+      "b_pikaid": "km3f0xt28zh1tct1hxp09quppo",
+      "a_binary_hex": "0000000000ffeeddccbbaa998877665544",
+      "b_binary_hex": "0a728eed814af94acf9af260877be93bac",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-023",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we82k6bj8i7ihdy0s3cnkl",
+      "b_pikaid": "fwjqym53r8zj0j5c4k2a6ry8i4",
+      "a_binary_hex": "006553f100555555555555555555555555",
+      "b_binary_hex": "080f8094bd7d35c241429a9c57fc43528c",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-024",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000001ekf",
+      "b_pikaid": "vh3z8xs404nagko1rtrphh2ufl",
+      "a_binary_hex": "123ede3fff00000000000000000000ffff",
+      "b_binary_hex": "0ff3cdcf00856e2936d97d97bbbc4ceb91",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-025",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "000000z5f77te5d7cusupax2lu",
+      "b_pikaid": "1fhlgdt27jfdnm4zihmc99grfe",
+      "a_binary_hex": "0000000023b4b5eda7d3fa70bc34e2b972",
+      "b_binary_hex": "00b991a33149a2a85a8515af62cd799bda",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-026",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0000a000sqnyn9zsnd7xcspnhg",
+      "b_pikaid": "hrw93f14zcl68bohhl4ipd10kj",
+      "a_binary_hex": "00000032a01a9b766f588f030061dd5f24",
+      "b_binary_hex": "090239f58da60955c21139224901190a23",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-027",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00900003ekin1n02wfbkw1y791",
+      "b_pikaid": "qnhvqn54g0b2lqs8t9hvjnqq22",
+      "a_binary_hex": "0000e6a9007178b55cd41ef98ac86f7a35",
+      "b_binary_hex": "0d8216a5a194218bb762d95b04359cd96a",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-028",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "100000076bg4o6qz2yn8w0vics",
+      "b_pikaid": "fs8wfsv4c2r7mxaj112ctre70p",
+      "a_binary_hex": "0081bf1000ef2497cce57b30ba1df52eac",
+      "b_binary_hex": "07ffffffff907dacfa71f210ac5e08ea09",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-029",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we8000000000000000000z",
+      "b_pikaid": "8h4bnfi2ih7yl245oo6tyj4jbp",
+      "a_binary_hex": "006553f100000000000000000000000023",
+      "b_binary_hex": "044bac335e53c31a004954b2571e1645d5",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-030",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000a00",
+      "b_pikaid": "ye5z0356363r8hr7utmxy7bsx5",
+      "a_binary_hex": "006553f1000000000000000000000032a0",
+      "b_binary_hex": "116e6e2831cae687e339ac0eb151c52629",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-031",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000090000",
+      "b_pikaid": "zxgv4vd2ayrq1rin865fyi1hoa",
+      "a_binary_hex": "006553f100000000000000000000e6a900",
+      "b_binary_hex": "1235be8e694ccea79f1d341db8557759ba",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-032",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000001000000",
+      "b_pikaid": "ih8zivx7gd4uf9uh25v36yrlxn",
+      "a_binary_hex": "006553f100000000000000000081bf1000",
+      "b_binary_hex": "095d9a565df871aa7a58e31056645ed1cb",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-033",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we800000000000z0000000",
+      "b_pikaid": "cl5wr0z6x162hvudbreca2v3lv",
+      "a_binary_hex": "006553f100000000000000027e9862c000",
+      "b_binary_hex": "06613ba9d3e68bf29b623d0cd23a270e03",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-034",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we8000000000a000000000",
+      "b_pikaid": "00000010000000000000001ekg",
+      "a_binary_hex": "006553f1000000000000039baeb3680000",
+      "b_binary_hex": "0000000001000000000000000000010000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-035",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000900000000000",
+      "b_pikaid": "00000110000000000000000000",
+      "a_binary_hex": "006553f100000000001070872e38400000",
+      "b_binary_hex": "0000000025000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-036",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000010000000000000",
+      "b_pikaid": "00000750000000000000000001",
+      "a_binary_hex": "006553f100000000093f4c09ffa4000000",
+      "b_binary_hex": "0000000101000000000000000000000001",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-037",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000z00000000000000",
+      "b_pikaid": "00001017oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "006553f10000002d838a41363b30000000",
+      "b_binary_hex": "0000000511ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-038",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we800a0000000000000000",
+      "b_pikaid": "0001ekh0000000000001z141z5",
+      "a_binary_hex": "006553f1000041d51ed52e710a00000000",
+      "b_binary_hex": "0000010001000000000000000100000001",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-039",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000000000000000000",
+      "b_pikaid": "1z141z30000000000000000000",
+      "a_binary_hex": "0000000000000000000000000000000000",
+      "b_binary_hex": "00ffffffff000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-040",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "adyncls5zl3hby9zka3ltgvixj",
+      "b_pikaid": "fs8wfsv0000000000000000001",
+      "a_binary_hex": "0543c8f590c7953dc141cf5d7bde462597",
+      "b_binary_hex": "07ffffffff000000000000000000000001",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-041",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "8wk7cp717b2c4o4hrzahzip9pj",
+      "b_pikaid": "0s44we87oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "048352d00b2817b6e0e7fcf77f96214b67",
+      "b_binary_hex": "006553f100ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-042",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "8dbbc0d5bnsilt2om5gf4kb0sx",
+      "b_pikaid": "zzzzzzy3u9haurb9q2x1650zcw",
+      "a_binary_hex": "043df4d08db16f0ec8f132144234e5ecd1",
+      "b_binary_hex": "123ede3ffe800000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-043",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "9e681yf45nob4kp1rb4vxir7f1",
+      "b_pikaid": "zzzzzzz0000000000000000002",
+      "a_binary_hex": "04c2cc09e78a8c69fe00e72996de52c44d",
+      "b_binary_hex": "123ede3fff000000000000000000000002",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-044",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "h0fcc0u6eg9uazdf4zphws2jzk",
+      "b_pikaid": "00000000000000000000000074",
+      "a_binary_hex": "089f3946ded5587174347133df2e2b3db0",
+      "b_binary_hex": "0000000000000000000000000000000100",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-045",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "6rp649a4zegwjr3xiq7eptni3i",
+      "b_pikaid": "0s44we80000000000000001ekh",
+      "a_binary_hex": "036e4ec00ea615b888bd97a809bb8a9c5e",
+      "b_binary_hex": "006553f100000000000000000000010001",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-046",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "pq6tw7h2r0yjlykc45eqp25ehg",
+      "b_pikaid": "zzzzzzz0000003w5e11264sgsf",
+      "a_binary_hex": "0d0a0c464d5bad054f2e9c2ee870753e94",
+      "b_binary_hex": "123ede3fff00000000ffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-047",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "qa88kpq292ayky7woeqjmd4li8",
+      "b_pikaid": "00000007oiylpimjg5u2ca1ypq",
+      "a_binary_hex": "0d52452ade4b0beda82df0ca9335093ae0",
+      "b_binary_hex": "0000000000fffffffffffffffffffffffe",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-048",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "vf23rwp0gvn69hexskxfvwofk0",
+      "b_pikaid": "0s44we854cn2h0f0yrw1k6pb56",
+      "a_binary_hex": "0fec687e090fa045486684aadc906b90c0",
+      "b_binary_hex": "006553f100aaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-049",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "gsle68a5gswgfltttw31esnxor",
+      "b_pikaid": "zzzzzzz0000003w5e11264sgsg",
+      "a_binary_hex": "0882ff3c0ab631adf1f7311942edf16e4b",
+      "b_binary_hex": "123ede3fff000000010000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-050",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z44e5sr1fswkkcpzo0pa9",
+      "b_pikaid": "00010004dd28vh8wahua9y284m",
+      "a_binary_hex": "0100000000926bb36d784b3dd9aa839401",
+      "b_binary_hex": "000000b64091ae85e5ef0f1a6eb313dba6",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-051",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "glen9mr4e6vraaxw66wenm6md3",
+      "b_pikaid": "90000000m2tlt0amhghtz3w7bi",
+      "a_binary_hex": "086917d2839272d580a74003cf85f628b7",
+      "b_binary_hex": "048fb79000147083bb48dca4e4b3434c0e",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-052",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "lrot0ze0000000000000000010",
+      "b_pikaid": "0s44we80000000000000000a00",
+      "a_binary_hex": "0b08775e3a000000000000000000000024",
+      "b_binary_hex": "006553f1000000000000000000000032a0",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-053",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "ab5bok5053jhppnwz9ktobrxwg",
+      "b_pikaid": "0s44we80000000000000z00000",
+      "a_binary_hex": "0539a4221504b84c9c1d799d0f77a3ff60",
+      "b_binary_hex": "006553f10000000000000000007e246c00",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-054",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "2w6u9pg33puonsyaflismlpt6y",
+      "b_pikaid": "0s44we80000000001000000000",
+      "a_binary_hex": "017781f2a4676cdc39a1ce7a270a8ded0a",
+      "b_binary_hex": "006553f1000000000000005c5e45240000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-055",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "xlubdxo3cp60saplitzeyuekpp",
+      "b_pikaid": "0s44we80000009000000000000",
+      "a_binary_hex": "1108597d4c6fbd52bd25aab4bf71dfa65d",
+      "b_binary_hex": "006553f100000000024fd3027fe9000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-056",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "r4gyjjh7lhx5spmvn1ppim9bdu",
+      "b_pikaid": "0s44we8000a000000000000000",
+      "a_binary_hex": "0dbf43e76dfd32297b67e787d68b63cfe2",
+      "b_binary_hex": "006553f1000001d424697a2dce80000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-057",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "466a7ql6xmldst02nqs584vdxr",
+      "b_pikaid": "1ox7vvu6c1pguf0qouodf0v74h",
+      "a_binary_hex": "021d3d23ade718ff1273f821d788524c4f",
+      "b_binary_hex": "00db91ce2ad31e8ed4853dc349d94da1d1",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-058",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "234q2lx3ddc8rh0870pad5kj1l",
+      "b_pikaid": "6sgfis447nlji3i71498vhhwkj",
+      "a_binary_hex": "010ec71fb5705c757c9266ca00ce0ff669",
+      "b_binary_hex": "0371096cd48c65e6e887dbf63f725b0c23",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-059",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "2nydyd4166evn0ujuu5gx837za",
+      "b_pikaid": "9e681yf45nob4kp1rb4vxir7f1",
+      "a_binary_hex": "0159d42d38270c1839d3ba1d6ac58cb726",
+      "b_binary_hex": "04c2cc09e78a8c69fe00e72996de52c44d",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-060",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "v932yvw1fqt79lu0n6b910qtzp",
+      "b_pikaid": "ac4p7mb2j1yias5kgkt3rp776a",
+      "a_binary_hex": "0fd6e1b41c2fe75a1697bde03f2d340e55",
+      "b_binary_hex": "053d2ec6d3544b9f0c6a37c95e64139512",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-061",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000zz56f9denl2ng398qxbkb",
+      "b_pikaid": "x8ey9mg5pzge23p4mwc4qt35v8",
+      "a_binary_hex": "000000050fac95e7e3db79d5a14a8582cb",
+      "b_binary_hex": "10d7f56338beb1cc1d98a6f9f77ebd6574",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-062",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "7ai19y56gmc7mx0ku8g79lenrt",
+      "b_pikaid": "mmwpsfl775f0epx3yrn6rmrwdq",
+      "a_binary_hex": "03b212129dd75a5ec20f2713306f31d8d9",
+      "b_binary_hex": "0b78fbf431efe9e2cdccf321e6a11c1eae",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-063",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "5eqsalv4fuafyrlzzh0l1kg1iu",
+      "b_pikaid": "fas1e44131buu9zs457rry9m7s",
+      "a_binary_hex": "02bddec6b393f9ee67c969d2992cfff3b6",
+      "b_binary_hex": "07c10af1b42423a27bdf4be470ee4cf6b8",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-064",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "km3f0xt28zh1tct1hxp09quppo",
+      "b_pikaid": "ww4qn7z5ybnix2b2ymd7xhdg24",
+      "a_binary_hex": "0a728eed814af94acf9af260877be93bac",
+      "b_binary_hex": "10abaffc0fc66a13bf944aec5e616d178c",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-065",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "tyenbdz0000000000000000075",
+      "b_pikaid": "xkzuclz4sgnj41il8jc87hyg86",
+      "a_binary_hex": "0f2ea5ff67000000000000000000000101",
+      "b_binary_hex": "11054c7e579fa91ec00349d37b3e2d33a6",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-066",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "y2wldou5neys31syq7v27bf3fs",
+      "b_pikaid": "r4gyjjh7lhx5spmvn1ppim9bdu",
+      "a_binary_hex": "1145d8c08ebc50eafdc5369c4ef3560628",
+      "b_binary_hex": "0dbf43e76dfd32297b67e787d68b63cfe2",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-067",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "9l5yrij1lsd1hmtmfitf606yp4",
+      "b_pikaid": "0zik0zk0tbvuiqzpp59vfobamg",
+      "a_binary_hex": "04dbffe8cb357f8b92e99697c42551fd28",
+      "b_binary_hex": "00800000001b272722f31ad818088aee88",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-068",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "b8byqkv4r611foehz1p4tlv5kx",
+      "b_pikaid": "3u5eiva35u3bj6k5hp3ehaofom",
+      "a_binary_hex": "05b13d760f9e762d7f0dc3da8386227701",
+      "b_binary_hex": "01f1e6e4066962c432469ce713ac713366",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-069",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zlrhafm6q5h39urjdzg61r7cch",
+      "b_pikaid": "ff3ivkx3uv1b61b19b28jegmo7",
+      "a_binary_hex": "120b8eee12e02d512fd4c02c48e6593941",
+      "b_binary_hex": "07d09bdf61808de83ea8db11fc2680d0c7",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-070",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zg13aas12yodtdmxty2fpaa6m0",
+      "b_pikaid": "gcksrk167vht4tl2x1uvtmfjo5",
+      "a_binary_hex": "11f6e567e424122cfe53c2f8651455fdf8",
+      "b_binary_hex": "084945be81cf41ab7d86fe250b5236eb55",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-071",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "nqidip616fwxej2rdvjpji6on1",
+      "b_pikaid": "y455fcj1l30wtn7izxnhiz1a0v",
+      "a_binary_hex": "0c07b609ea274aa4fbfa349f6d7c56903d",
+      "b_binary_hex": "114a4eb1f334d8beef18c28507b53643ff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-072",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz2zphkvs5hlrgmn3xq4t",
+      "b_pikaid": "cf03asg3ew9spyev1lb2d51hqd",
+      "a_binary_hex": "123ede3fff63b679cadf784fa728b8018d",
+      "b_binary_hex": "064b06b56071c61728d3f1b5667a4f6905",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-073",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "230qu3c26uz25kvdycqtihh5h0",
+      "b_pikaid": "zlrhafm6q5h39urjdzg61r7cch",
+      "a_binary_hex": "010e6126d84901ace192d316d06d3abef4",
+      "b_binary_hex": "120b8eee12e02d512fd4c02c48e6593941",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-074",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "9tqf7bw70z7b9elsmks0yitpfk",
+      "b_pikaid": "rouplt54ytvsc9oiq2j3bies52",
+      "a_binary_hex": "04fae150dcea32ff20f444fc9261e74000",
+      "b_binary_hex": "0e08b928a9a58e31b8ff6f96d0bf82d3f6",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-075",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "7vny47t7042wpa8b2oehe8ug89",
+      "b_pikaid": "qym680r74kp4tbzucnrur6ez41",
+      "a_binary_hex": "03fe590cd9e9661c441f810c7e6d3f3da9",
+      "b_binary_hex": "0daa29ac1bed877ea7ce0b34e515ef5b41",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-076",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "7jlbf9j5y75pjctnc67fafiydo",
+      "b_pikaid": "jjwqqpd388o655nobo4et9ii5v",
+      "a_binary_hex": "03d2d5f307c64c7c73a6f2f92c9ec4058c",
+      "b_binary_hex": "09e8ef85b16b9cbd1f4dbaa6a886484973",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-077",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "8h4bnfi2ih7yl245oo6tyj4jbp",
+      "b_pikaid": "le83wcw4cvgcz8bt0l5kj47jur",
+      "a_binary_hex": "044bac335e53c31a004954b2571e1645d5",
+      "b_binary_hex": "0ad7f11690913a9b0483a66df5ba0f9043",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-078",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "op59fdg0000000000001z141z3",
+      "b_pikaid": "0001ekh0jw6wfml51h5s4qgu6n",
+      "a_binary_hex": "0c848a5f140000000000000000ffffffff",
+      "b_binary_hex": "0000010001126ade7c6b33f2e69f52e6cf",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-079",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "a5mcs7p3twx1gb21i5qoxzk7cf",
+      "b_pikaid": "6iix3l53als29zdy8bwxmxdr10",
+      "a_binary_hex": "0525b8c3d57fad4bbed43e6a531857892f",
+      "b_binary_hex": "034d3eca696dcd06e02af651cadd55b314",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-080",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "fir56574cct4q8189nv45cnm9t",
+      "b_pikaid": "vp9gmwo0v1ym6qxda1lpz7an6c",
+      "a_binary_hex": "07ddc9215b90bfdbf1f530949a7b0a9081",
+      "b_binary_hex": "10112f74f81cbfd216d7e191caa37c36d4",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-081",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "abg62kl5ryk0hlelqmnulkzuus",
+      "b_pikaid": "b61pxn71dgz0nykxbrnrvq1d8c",
+      "a_binary_hex": "053aba0e85c085dee1b7021c808c332ef4",
+      "b_binary_hex": "05a9019f932dcc96cd3d4c1d2329ea9f3c",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-082",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "vp9gmwo0v1ym6qxda1lpz7an6c",
+      "b_pikaid": "0000000000000000000000000z",
+      "a_binary_hex": "10112f74f81cbfd216d7e191caa37c36d4",
+      "b_binary_hex": "0000000000000000000000000000000023",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-083",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z35nw2klt9ack8p5jogoz",
+      "b_pikaid": "00000100000000000000000000",
+      "a_binary_hex": "00ffffffffbcc186d3d81a7d09e93c2183",
+      "b_binary_hex": "0000000024000000000000000000000000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-084",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "idmhnjh5sw9kvzto8ipg0l4p1s",
+      "b_pikaid": "00000740000000000000000001",
+      "a_binary_hex": "095089db6dc163cb1014c2805abb34ccd0",
+      "b_binary_hex": "0000000100000000000000000000000001",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-085",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00001007oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "123ede3fffffffffffffffffffffffffff",
+      "b_binary_hex": "0000000510ffffffffffffffffffffffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-086",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000010000000000000000001",
+      "b_pikaid": "0001ekg0000000000000000074",
+      "a_binary_hex": "0000000001000000000000000000000001",
+      "b_binary_hex": "0000010000000000000000000000000100",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-087",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "000000z0000000000000000000",
+      "b_pikaid": "0zik0zl0000000000000000000",
+      "a_binary_hex": "0000000023000000000000000000000000",
+      "b_binary_hex": "0080000001000000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-088",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000100000000000000000002",
+      "b_pikaid": "1z141z50000000000000000001",
+      "a_binary_hex": "0000000024000000000000000000000002",
+      "b_binary_hex": "0100000001000000000000000000000001",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-089",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000737oiylpimjg5u2ca1ypr",
+      "b_pikaid": "fs8wfsx7oiylpimjg5u2ca1ypr",
+      "a_binary_hex": "00000000ffffffffffffffffffffffffff",
+      "b_binary_hex": "0800000001ffffffffffffffffffffffff",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-090",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000750000000000000000001",
+      "b_pikaid": "zzzzzzx0000000000000001ekh",
+      "a_binary_hex": "0000000101000000000000000000000001",
+      "b_binary_hex": "123ede3ffd000000000000000000010001",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-091",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00001000000000000000000000",
+      "b_pikaid": "0s44we80000000000000000001",
+      "a_binary_hex": "0000000510000000000000000000000000",
+      "b_binary_hex": "006553f100000000000000000000000001",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-092",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0000101002loz3po6mcf6vsn23",
+      "b_pikaid": "zzzzzzz0000000000000000011",
+      "a_binary_hex": "000000051100112233445566778899aabb",
+      "b_binary_hex": "123ede3fff000000000000000000000025",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-093",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0001ekg7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "00000000000000000000001ekg",
+      "a_binary_hex": "0000010000ffffffffffffffffffffffff",
+      "b_binary_hex": "0000000000000000000000000000010000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-094",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0zik0zj0000000000000000001",
+      "b_pikaid": "0s44we80000000000001z141z5",
+      "a_binary_hex": "007fffffff000000000000000000000001",
+      "b_binary_hex": "006553f100000000000000000100000001",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-095",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0zik0zl0000000000000000000",
+      "b_pikaid": "zzzzzzz3u9haurb9q2x1650zcw",
+      "a_binary_hex": "0080000001000000000000000000000000",
+      "b_binary_hex": "123ede3fff800000000000000000000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-096",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z30000000000001z141z4",
+      "b_pikaid": "00000007ogcwqewv9jhn5e9bno",
+      "a_binary_hex": "00ffffffff000000000000000100000000",
+      "b_binary_hex": "0000000000ffeeddccbbaa998877665544",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-097",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "1z141z57oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0s44we80000000000000001ekf",
+      "a_binary_hex": "0100000001ffffffffffffffffffffffff",
+      "b_binary_hex": "006553f10000000000000000000000ffff",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-098",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "fs8wfsw0000000000000000001",
+      "b_pikaid": "00001000q6au1xi0ihr4mov4ox",
+      "a_binary_hex": "0800000000000000000000000000000001",
+      "b_binary_hex": "0000000510183b672b57c7d357978d5981",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-099",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000000",
+      "b_pikaid": "09000001gpxh89vt9litbcp5wr",
+      "a_binary_hex": "006553f100000000000000000000000000",
+      "b_binary_hex": "00206fc40030ce8c38f77af8fe6f58d22b",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-100",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "hzzzzzz0000000000000000010",
+      "b_pikaid": "0s44we800000000000000000a0",
+      "a_binary_hex": "091f6f1fff000000000000000000000024",
+      "b_binary_hex": "006553f100000000000000000000000168",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-101",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzy7oiylpimjg5u2ca1ypr",
+      "b_pikaid": "0s44we800000000000000z0000",
+      "a_binary_hex": "123ede3ffeffffffffffffffffffffffff",
+      "b_binary_hex": "006553f100000000000000000003810300",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-102",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000000",
+      "b_pikaid": "0s44we80000000000100000000",
+      "a_binary_hex": "006553f100000000000000000000000000",
+      "b_binary_hex": "006553f1000000000000000290d7410000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-103",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000000002",
+      "b_pikaid": "0s44we80000000900000000000",
+      "a_binary_hex": "123ede3fff000000000000000000000002",
+      "b_binary_hex": "006553f100000000001070872e38400000",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-104",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000000000000000011",
+      "b_pikaid": "0s44we80000a00000000000000",
+      "a_binary_hex": "0000000000000000000000000000000025",
+      "b_binary_hex": "006553f10000000d0102ee0f7ea0000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-105",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000074",
+      "b_pikaid": "0s44we80z00000000000000000",
+      "a_binary_hex": "006553f100000000000000000000000100",
+      "b_binary_hex": "006553f1002066e52cecdba2ec00000000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-106",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000000000000001ekf",
+      "b_pikaid": "00001012f2rqbw7kdl9t5ajn1u",
+      "a_binary_hex": "123ede3fff00000000000000000000ffff",
+      "b_binary_hex": "0000000511509cfa2b84366f1953b18972",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-107",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000000000000000001z141z3",
+      "b_pikaid": "9t9c3ri5636x32nyzcr7db3n8b",
+      "a_binary_hex": "00000000000000000000000000ffffffff",
+      "b_binary_hex": "04f92b6b0eac46754add2d91714a79075b",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-108",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000001z141z5",
+      "b_pikaid": "qyktctt414265lo4b6g7ee9qtc",
+      "a_binary_hex": "006553f100000000000000000100000001",
+      "b_binary_hex": "0daa06e23186574bc050b06d10b5522600",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-109",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz0000003w5e11264sgsg",
+      "b_pikaid": "m66zg3k1wr14udou6nfwb2hlst",
+      "a_binary_hex": "123ede3fff000000010000000000000000",
+      "b_binary_hex": "0b3cbe3a403fa5c06c1541fa5d6f5b969d",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-110",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000003u9haurb9q2x1650zcx",
+      "b_pikaid": "vf23rwp0gvn69hexskxfvwofk0",
+      "a_binary_hex": "0000000000800000000000000000000001",
+      "b_binary_hex": "0fec687e090fa045486684aadc906b90c0",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-111",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we87oiylpimjg5u2ca1ypr",
+      "b_pikaid": "2rbsq1h1m2gf7r79zqnd56kv9j",
+      "a_binary_hex": "006553f100ffffffffffffffffffffffff",
+      "b_binary_hex": "0165fbc9d535c1fefc5651aa0e742f6547",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-112",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "zzzzzzz7ogcwqewv9jhn5e9bno",
+      "b_pikaid": "20059iz2fwd2ja454e6jcz15a4",
+      "a_binary_hex": "123ede3fffffeeddccbbaa998877665544",
+      "b_binary_hex": "010381df7b515fcb30834c34ea2f9333fc",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-113",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000003u9haurb9q2x1650zcx",
+      "b_pikaid": "7i8vwww1diu29hqp6x3p4p4mc5",
+      "a_binary_hex": "0000000000800000000000000000000001",
+      "b_binary_hex": "03cdfcb8602dd8d96ed0ade467e17ae315",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-114",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000003w5e11264sgsg",
+      "b_pikaid": "tkd4i4o7301wdl1z0n1v8oelzo",
+      "a_binary_hex": "006553f100000000010000000000000000",
+      "b_binary_hex": "0efc0a01c8ec12957b5b0c4bf1c78eced4",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-115",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00000900ywy0jvq1vrrhnmbd20",
+      "b_pikaid": "zjmh23r23drdqyiiht613ateby",
+      "a_binary_hex": "00000001442052c8543d584f9dee0878d8",
+      "b_binary_hex": "1203d956e745c95d703e6f79ea8e3ab3ce",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-116",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00010004dd28vh8wahua9y284m",
+      "b_pikaid": "xao20ca25c9muoybrr2ai2mg7t",
+      "a_binary_hex": "000000b64091ae85e5ef0f1a6eb313dba6",
+      "b_binary_hex": "10e013fe3a479987c6a87dde1f872ce599",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-117",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "00z0000014ipxcbxfd3c70dtn7",
+      "b_pikaid": "00000zz56f9denl2ng398qxbkb",
+      "a_binary_hex": "0003810300010ac0da20cc9f04c60cd353",
+      "b_binary_hex": "000000050fac95e7e3db79d5a14a8582cb",
+      "expected_compare": 1
+    },
+    {
+      "id": "O-SEEDED-118",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "a0000006441vns3hsjv1j5op8v",
+      "b_pikaid": "nw0jeu62xxr646icr7d1zjmeqz",
+      "a_binary_hex": "051176a000cbc6049f5806e61ed247b6cf",
+      "b_binary_hex": "0c1b8cc1de6212e6c2e77ba89273f6a32b",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-119",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000000090",
+      "b_pikaid": "95smkb211xjmoxb7tav8hjc0x7",
+      "a_binary_hex": "006553f100000000000000000000000144",
+      "b_binary_hex": "04a49a704e231db9eb5e27d6f9fce4a6ab",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-120",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000000001000",
+      "b_pikaid": "7b1q22n60ylq7vt2178b9gtb07",
+      "a_binary_hex": "006553f10000000000000000000000b640",
+      "b_binary_hex": "03b40aa9ffc8db2841f7435dd3969160f7",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-121",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we800000000000000z0000",
+      "b_pikaid": "ysq9twy2zcr9jxdwbdfg06pqah",
+      "a_binary_hex": "006553f100000000000000000003810300",
+      "b_binary_hex": "11a2eb69b26362aa25445ff231a2bbd759",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-122",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we8000000000000a000000",
+      "b_pikaid": "zsixrao4asdjt7vhnd1h1x08ze",
+      "a_binary_hex": "006553f10000000000000000051176a000",
+      "b_binary_hex": "1223ee7a708f4c590ea73663f93ecfe27a",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-123",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000000900000000",
+      "b_pikaid": "hh6liqb13oo16rkj5h95ff63et",
+      "a_binary_hex": "006553f100000000000000171791490000",
+      "b_binary_hex": "08db9e0c1324bd46af5ee736307754f1c5",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-124",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000010000000000",
+      "b_pikaid": "9tqf7bw70z7b9elsmks0yitpfk",
+      "a_binary_hex": "006553f10000000000000cfd41b9100000",
+      "b_binary_hex": "04fae150dcea32ff20f444fc9261e74000",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-125",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80000000z00000000000",
+      "b_pikaid": "c31u52z256nj52qabjyjlt92g5",
+      "a_binary_hex": "006553f100000000003fee7f7adac00000",
+      "b_binary_hex": "061ff3c23b47749279f12da49cfeced5a5",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-126",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we800000a0000000000000",
+      "b_pikaid": "guih8op2ym4h5nsm45267bqj60",
+      "a_binary_hex": "006553f1000000005c78f863fc68000000",
+      "b_binary_hex": "0889e9d03962b355317030ad58fcd32a88",
+      "expected_compare": -1
+    },
+    {
+      "id": "O-SEEDED-127",
+      "requirement_refs": [
+        "ORDER-001",
+        "BIN-001"
+      ],
+      "tags": [
+        "deterministic-corpus"
+      ],
+      "a_pikaid": "0s44we80009000000000000000",
+      "b_pikaid": "ghu6le270ha4thcas0k7oiy3dw",
+      "a_binary_hex": "006553f1000001a553f8878fa040000000",
+      "b_binary_hex": "085c3b73cae9bd0393b8015912288b67a4",
+      "expected_compare": -1
+    }
+  ]
+}

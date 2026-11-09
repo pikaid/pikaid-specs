@@ -1,0 +1,434 @@
+{
+  "suite": "invalid-binary",
+  "cases": [
+    {
+      "id": "B-LENGTH-000",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-001",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-002",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-003",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-004",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-005",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-006",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-011",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-012",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-013",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-016",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-018",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-019",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-020",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-032",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-064",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-128",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-LENGTH-256",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-length"
+      ],
+      "input_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "binary_length"
+    },
+    {
+      "id": "B-TS-OVERFLOW-FIRST-ZEROS",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4000000000000000000000000000",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-FIRST-ONES",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4000ffffffffffffffffffffffff",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-FIRST-PATTERN",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede400000112233445566778899aabb",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-SECOND-ZEROS",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4001000000000000000000000000",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-SECOND-ONES",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4001ffffffffffffffffffffffff",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-SECOND-PATTERN",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede400100112233445566778899aabb",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-NEXT-PAGE-ZEROS",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4000000000000000000000000000",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-NEXT-PAGE-ONES",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede4000ffffffffffffffffffffffff",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-NEXT-PAGE-PATTERN",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "123ede400000112233445566778899aabb",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-HIGH-40BIT-ZEROS",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "8000000000000000000000000000000000",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-HIGH-40BIT-ONES",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "8000000000ffffffffffffffffffffffff",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-HIGH-40BIT-PATTERN",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "800000000000112233445566778899aabb",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-MAXIMUM-40BIT-ZEROS",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "ffffffffff000000000000000000000000",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-MAXIMUM-40BIT-ONES",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "ffffffffffffffffffffffffffffffffff",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    },
+    {
+      "id": "B-TS-OVERFLOW-MAXIMUM-40BIT-PATTERN",
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "binary-ts-overflow"
+      ],
+      "input_hex": "ffffffffff00112233445566778899aabb",
+      "expected": "reject",
+      "reason": "timestamp_overflow"
+    }
+  ]
+}

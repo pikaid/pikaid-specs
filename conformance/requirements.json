@@ -1,0 +1,172 @@
+{
+  "suite": "normative-requirements",
+  "spec_revision": "1.0.4",
+  "requirements": [
+    {
+      "id": "FMT-001",
+      "level": "MUST",
+      "spec_section": "2(1), 1",
+      "statement": "Canonical text has exactly 26 ASCII characters partitioned into seven timestamp and nineteen randomness digits.",
+      "verification": [
+        "valid_vectors",
+        "invalid_string_vectors",
+        "runtime_generation"
+      ]
+    },
+    {
+      "id": "FMT-002",
+      "level": "MUST",
+      "spec_section": "2(1-2), 1",
+      "statement": "Only lowercase ASCII Base36 digits are valid; no prefixes, separators, case folding, or normalization.",
+      "verification": [
+        "valid_vectors",
+        "invalid_string_vectors"
+      ]
+    },
+    {
+      "id": "FMT-003",
+      "level": "MUST",
+      "spec_section": "2(2), 3.1",
+      "statement": "Both unsigned components use exact-width lowercase Base36 encoding with leading zero padding and no truncation.",
+      "verification": [
+        "valid_vectors",
+        "round_trip_properties"
+      ]
+    },
+    {
+      "id": "TS-001",
+      "level": "MUST",
+      "spec_section": "2(3), 3.1",
+      "statement": "Generation uses whole-second Unix UTC timestamp in 0..36^7-1, rejecting out-of-range values.",
+      "verification": [
+        "valid_vectors",
+        "runtime_generation",
+        "conditional_timestamp_injection",
+        "code_review"
+      ]
+    },
+    {
+      "id": "RNG-001",
+      "level": "MUST",
+      "spec_section": "2(4), 3.1",
+      "statement": "Generation consumes exactly 12 uniformly distributed bytes from a CSPRNG; weak RNGs are forbidden.",
+      "verification": [
+        "runtime_generation",
+        "code_review",
+        "fault_injection"
+      ]
+    },
+    {
+      "id": "BIN-001",
+      "level": "MUST",
+      "spec_section": "2(5), 3.2",
+      "statement": "Binary form is exactly 17 bytes: five-byte big-endian unsigned timestamp plus unchanged twelve-byte randomness; conversions are lossless.",
+      "verification": [
+        "valid_vectors",
+        "invalid_binary_vectors",
+        "ordering_vectors",
+        "round_trip_properties"
+      ]
+    },
+    {
+      "id": "VAL-001",
+      "level": "MUST",
+      "spec_section": "4(1-4)",
+      "statement": "Full validity requires exact ASCII shape and randomness <= 2^96-1; shape alone is insufficient.",
+      "verification": [
+        "valid_vectors",
+        "invalid_string_vectors"
+      ]
+    },
+    {
+      "id": "VAL-002",
+      "level": "MUST",
+      "spec_section": "2(6), 3.2, 4",
+      "statement": "Strict string/binary decoding and conversion reject malformed or out-of-range input without coercion or wrapping.",
+      "verification": [
+        "invalid_string_vectors",
+        "invalid_binary_vectors",
+        "round_trip_properties"
+      ]
+    },
+    {
+      "id": "PARSE-001",
+      "level": "CONDITIONAL_MUST",
+      "spec_section": "4",
+      "statement": "If a parser is exposed, preserve full integer timestamp and twelve randomness bytes or 24 lowercase hex characters; datetime results are UTC.",
+      "verification": [
+        "valid_vectors",
+        "conditional_parse"
+      ]
+    },
+    {
+      "id": "ORDER-001",
+      "level": "MUST",
+      "spec_section": "5",
+      "statement": "For distinct timestamps, lexicographical ordering of valid text and unsigned binary matches timestamp order; same-second order follows randomness.",
+      "verification": [
+        "ordering_vectors",
+        "round_trip_properties"
+      ]
+    },
+    {
+      "id": "PRED-001",
+      "level": "CONDITIONAL_MAY",
+      "spec_section": "4",
+      "statement": "A boolean full-validation API is optional; if exposed, it returns false for invalid inputs.",
+      "verification": [
+        "invalid_string_vectors",
+        "valid_vectors"
+      ]
+    },
+    {
+      "id": "SHAPE-001",
+      "level": "CONDITIONAL_MAY",
+      "spec_section": "4",
+      "statement": "A format-only helper is optional; if exposed, it must not misrepresent shape-only acceptance as full validity.",
+      "verification": [
+        "invalid_string_vectors"
+      ]
+    },
+    {
+      "id": "GENT-001",
+      "level": "CONDITIONAL_MUST",
+      "spec_section": "2 final paragraph",
+      "statement": "If caller-supplied timestamps are supported, range-check them and still use fresh CSPRNG randomness.",
+      "verification": [
+        "conditional_timestamp_injection",
+        "code_review"
+      ]
+    },
+    {
+      "id": "GENB-001",
+      "level": "CONDITIONAL_MAY",
+      "spec_section": "3.2",
+      "statement": "Direct binary generation API is optional; if provided, it must produce a valid 17-byte identifier.",
+      "verification": [
+        "runtime_generation"
+      ]
+    },
+    {
+      "id": "SEC-001",
+      "level": "SHOULD",
+      "spec_section": "6",
+      "statement": "Applications should enforce uniqueness where needed and not treat identifiers as authentication secrets.",
+      "verification": [
+        "documentation_review"
+      ]
+    },
+    {
+      "id": "IMM-001",
+      "level": "MUST",
+      "spec_section": "9",
+      "statement": "The identifier format is immutable and unversioned. No version marker, alternate alphabet, field width, or alternate binary layout may be silently substituted.",
+      "verification": [
+        "valid_vectors",
+        "invalid_string_vectors",
+        "invalid_binary_vectors",
+        "specification_governance_review"
+      ]
+    }
+  ]
+}

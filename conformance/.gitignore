@@ -1,0 +1,22 @@
+# Operating-system metadata is never source material and must not be shipped.
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Generated Python files and local environments (not fixture sources).
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local results and runtime artifacts; never publish as official certification.
+/conformance-results.json
+/coverage/
+/.coverage
+/htmlcov/
+/tmp/

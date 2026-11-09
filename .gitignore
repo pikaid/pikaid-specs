@@ -1,0 +1,18 @@
+# Operating-system metadata
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Generated Python test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Generated results and local environment data
+/conformance-results.json
+/coverage/
+
+/.??/

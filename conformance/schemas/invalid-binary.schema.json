@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "invalid-binary.schema.json",
+  "title": "PikaID conformance invalid-binary cases",
+  "type": "object",
+  "properties": {
+    "suite": {
+      "const": "invalid-binary"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9-]+$"
+          },
+          "requirement_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]+-[0-9]{3}$"
+            }
+          },
+          "input_hex": {
+            "type": "string",
+            "pattern": "^([0-9a-f]{2})*$"
+          },
+          "reason": {
+            "enum": [
+              "binary_length",
+              "timestamp_overflow"
+            ]
+          },
+          "expected": {
+            "const": "reject"
+          },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "requirement_refs",
+          "input_hex",
+          "reason",
+          "expected"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "suite",
+    "cases"
+  ],
+  "additionalProperties": false
+}

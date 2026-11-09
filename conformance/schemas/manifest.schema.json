@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifest.schema.json",
+  "title": "PikaID conformance package manifest",
+  "type": "object",
+  "properties": {
+    "name": {
+      "const": "pikaid-cross-language-conformance"
+    },
+    "package_revision": {
+      "type": "string",
+      "pattern": "^[0-9]+[.][0-9]+[.][0-9]+$"
+    },
+    "status": {
+      "const": "OFFICIAL"
+    },
+    "spec_revision": {
+      "type": "string",
+      "pattern": "^[0-9]+[.][0-9]+[.][0-9]+$"
+    },
+    "identifier_format": {
+      "const": "immutable_unversioned"
+    },
+    "mandatory_capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "conditional_capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "fixtures": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^cases/[a-z-]+[.]json$"
+          },
+          "schema": {
+            "type": "string",
+            "pattern": "^schemas/[a-z-]+[.]schema[.]json$"
+          },
+          "cases": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "path",
+          "schema",
+          "cases"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "requirements_path": {
+      "const": "requirements.json"
+    },
+    "requirements_schema": {
+      "const": "schemas/requirements.schema.json"
+    },
+    "coverage_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "integrity_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "name",
+    "package_revision",
+    "status",
+    "spec_revision",
+    "identifier_format",
+    "mandatory_capabilities",
+    "conditional_capabilities",
+    "fixtures",
+    "requirements_path",
+    "requirements_schema",
+    "coverage_note",
+    "integrity_note"
+  ],
+  "additionalProperties": false
+}

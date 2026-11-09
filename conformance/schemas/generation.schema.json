@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generation.schema.json",
+  "title": "PikaID conformance generation cases",
+  "type": "object",
+  "properties": {
+    "suite": {
+      "const": "generation"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9-]+$"
+          },
+          "requirement_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]+-[0-9]{3}$"
+            }
+          },
+          "mode": {
+            "enum": [
+              "current_string",
+              "current_binary",
+              "caller_supplied_string",
+              "caller_supplied_binary"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "mandatory",
+              "conditional"
+            ]
+          },
+          "iteration_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "timestamp_seconds": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "expected": {
+            "enum": [
+              "canonical_valid_id_timestamp_between_clock_bounds",
+              "canonical_valid_id_with_exact_timestamp",
+              "canonical_valid_binary_timestamp_between_clock_bounds",
+              "canonical_valid_binary_with_exact_timestamp",
+              "reject"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "requirement_refs",
+          "mode",
+          "scope",
+          "iteration_count",
+          "timestamp_seconds",
+          "expected"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "suite",
+    "cases"
+  ],
+  "additionalProperties": false
+}

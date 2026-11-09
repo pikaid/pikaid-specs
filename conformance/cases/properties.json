@@ -1,0 +1,165 @@
+{
+  "suite": "properties",
+  "cases": [
+    {
+      "id": "P-ROUNDTRIP-TEXT",
+      "scope": "mandatory",
+      "strategy": "roundtrip_text_binary",
+      "minimum_trials": 512,
+      "requirement_refs": [
+        "FMT-003",
+        "BIN-001",
+        "VAL-002"
+      ],
+      "assertion": "For every valid textual identifier id, binary_to_text(text_to_binary(id)) must equal id byte-for-byte."
+    },
+    {
+      "id": "P-ROUNDTRIP-BINARY",
+      "scope": "mandatory",
+      "strategy": "roundtrip_binary_text",
+      "minimum_trials": 512,
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "assertion": "For every valid 17-byte binary input b, text_to_binary(binary_to_text(b)) must equal b byte-for-byte."
+    },
+    {
+      "id": "P-STRICT-REJECT-STRING",
+      "scope": "mandatory",
+      "strategy": "strict_invalid_string",
+      "minimum_trials": 0,
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "assertion": "All invalid-string corpus inputs must be rejected by strict string conversion. A boolean predicate is only required if exposed."
+    },
+    {
+      "id": "P-STRICT-REJECT-BINARY",
+      "scope": "mandatory",
+      "strategy": "strict_invalid_binary",
+      "minimum_trials": 0,
+      "requirement_refs": [
+        "BIN-001",
+        "VAL-002"
+      ],
+      "assertion": "All invalid-binary corpus inputs must be rejected by strict binary conversion."
+    },
+    {
+      "id": "P-ORDER-TIMESTAMP",
+      "scope": "mandatory",
+      "strategy": "timestamp_ordering",
+      "minimum_trials": 512,
+      "requirement_refs": [
+        "ORDER-001"
+      ],
+      "assertion": "For valid identifiers with unequal timestamps, both unsigned binary and ASCII lexicographic comparisons match timestamp order."
+    },
+    {
+      "id": "P-ORDER-SAME-SECOND",
+      "scope": "mandatory",
+      "strategy": "same_second_ordering",
+      "minimum_trials": 256,
+      "requirement_refs": [
+        "ORDER-001"
+      ],
+      "assertion": "Within the same second ordering follows randomness, not call order; compare unsigned binary and canonical ASCII."
+    },
+    {
+      "id": "P-GENERATE-STRING",
+      "scope": "mandatory",
+      "strategy": "current_time_generation",
+      "minimum_trials": 64,
+      "requirement_refs": [
+        "TS-001",
+        "FMT-001",
+        "FMT-002",
+        "RNG-001"
+      ],
+      "assertion": "Repeated generation produces valid 26 ASCII Base36 identifiers whose timestamps fall between wall-clock seconds before/after call (allow documented clock-tolerance policy)."
+    },
+    {
+      "id": "P-GENERATE-RNG-SOURCE",
+      "scope": "audit",
+      "strategy": "csprng_review",
+      "minimum_trials": 0,
+      "requirement_refs": [
+        "RNG-001"
+      ],
+      "assertion": "Audit all normal generation code paths to verify a secure OS/runtime CSPRNG supplies 12 bytes, with no weak random fallback. Statistical tests cannot prove cryptographic security."
+    },
+    {
+      "id": "P-GENERATE-RNG-FAILURE",
+      "scope": "audit",
+      "strategy": "csprng_failure_injection",
+      "minimum_trials": 0,
+      "requirement_refs": [
+        "RNG-001"
+      ],
+      "assertion": "If the entropy source can be fault-injected, ensure generation fails closed rather than continuing with weak or reused randomness."
+    },
+    {
+      "id": "P-GENERATE-FIXED-TS",
+      "scope": "conditional",
+      "strategy": "caller_supplied_timestamp",
+      "minimum_trials": 64,
+      "requirement_refs": [
+        "GENT-001",
+        "TS-001"
+      ],
+      "assertion": "Only if caller-supplied timestamp generation exists: returned timestamp must equal requested second; boundary timestamps must succeed and out-of-range seconds must be rejected."
+    },
+    {
+      "id": "P-GENERATE-BINARY-DIRECT",
+      "scope": "conditional",
+      "strategy": "direct_binary_generation",
+      "minimum_trials": 64,
+      "requirement_refs": [
+        "GENB-001",
+        "BIN-001"
+      ],
+      "assertion": "Only if a direct binary generation API exists: each output is 17 bytes and text/binary round trips succeed."
+    },
+    {
+      "id": "P-PARSE-COMPONENTS",
+      "scope": "conditional",
+      "strategy": "parse_components",
+      "minimum_trials": 32,
+      "requirement_refs": [
+        "PARSE-001"
+      ],
+      "assertion": "Only if a parser exists: it returns a lossless integer timestamp and original 12 randomness bytes or lowercase 24-hex value."
+    },
+    {
+      "id": "P-PARSE-UTC",
+      "scope": "conditional",
+      "strategy": "parse_utc_datetime",
+      "minimum_trials": 32,
+      "requirement_refs": [
+        "PARSE-001"
+      ],
+      "assertion": "Only if a datetime is returned: it denotes the exact UTC second, not local-time interpretation."
+    },
+    {
+      "id": "P-BOOL-VALIDATION",
+      "scope": "conditional",
+      "strategy": "boolean_validation",
+      "minimum_trials": 32,
+      "requirement_refs": [
+        "PRED-001"
+      ],
+      "assertion": "Only if full boolean validation is exposed: all valid vectors yield true, invalid-string vectors false."
+    },
+    {
+      "id": "P-SHAPE-ONLY",
+      "scope": "conditional",
+      "strategy": "shape_only_validation",
+      "minimum_trials": 32,
+      "requirement_refs": [
+        "SHAPE-001"
+      ],
+      "assertion": "Only if a format-only predicate exists: it accepts shape-valid entropy overflow strings as well-formed, but does not imply full validity."
+    }
+  ]
+}

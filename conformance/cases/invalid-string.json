@@ -1,0 +1,4810 @@
+{
+  "suite": "invalid-string",
+  "cases": [
+    {
+      "id": "S-LENGTH-000",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-001",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-002",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "00",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-003",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-006",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-007",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-008",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "00000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-018",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-019",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-020",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-024",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-025",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-027",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-028",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-034",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-052",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-128",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-LENGTH-256",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "length",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    },
+    {
+      "id": "S-POS-00-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "A0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-00-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "-0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-00-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": " 0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-01-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0A000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-01-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0-000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-01-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0 000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-02-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00A00000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-02-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00-00000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-02-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00 00000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-03-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000A0000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-03-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000-0000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-03-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000 0000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-04-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000A000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-04-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000-000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-04-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000 000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-05-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000A00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-05-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000-00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-05-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000 00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-06-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000A0000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-06-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000-0000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-06-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000 0000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-07-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000A000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-07-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000-000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-07-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000 000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-08-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000A00000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-08-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000-00000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-08-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000 00000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-09-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000A0000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-09-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000-0000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-09-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000 0000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-10-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000A000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-10-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000-000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-10-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000 000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-11-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000A00000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-11-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000-00000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-11-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000 00000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-12-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000A0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-12-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000-0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-12-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000 0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-13-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000A000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-13-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000-000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-13-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000 000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-14-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000A00000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-14-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000-00000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-14-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000 00000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-15-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000A0000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-15-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000-0000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-15-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000 0000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-16-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000A000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-16-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000-000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-16-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000 000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-17-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000A00000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-17-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000-00000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-17-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000 00000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-18-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000A0000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-18-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000-0000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-18-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000 0000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-19-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000A000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-19-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000-000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-19-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000 000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-20-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000A00000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-20-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000-00000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-20-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000 00000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-21-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000A0000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-21-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000-0000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-21-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000 0000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-22-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000A000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-22-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000-000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-22-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000 000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-23-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000000A00",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-23-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000000-00",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-23-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "00000000000000000000000 00",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-24-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000000A0",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-24-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000000-0",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-24-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "000000000000000000000000 0",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-25-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000000A",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-B",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0B000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-C",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00C00000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-D",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000D0000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-E",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000E000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-F",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000F00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-G",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000G0000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-H",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000H000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-I",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000I00000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-J",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000J0000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-K",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000000K000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-L",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000000L00000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-M",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000000M0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-N",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000000000N000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-O",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000000000O00000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-P",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000000000P0000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-Q",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000000000000Q000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-R",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000000000000R00000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-S",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000000000000S0000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-T",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000000000000000T000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-U",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000000000000000U00000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-V",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000000000000000V0000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-W",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "0000000000000000000000W000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-X",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "00000000000000000000000X00",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHARSET-UPPER-Y",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "uppercase"
+      ],
+      "input": "000000000000000000000000Y0",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-25-SEPARATOR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000000-",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-POS-25-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "position",
+        "charset"
+      ],
+      "input": "0000000000000000000000000 ",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-UNDERSCORE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000_0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-SLASH",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000/0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-BACKSLASH",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\\0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-COLON",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000:0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-PLUS",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000+0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-EQUALS",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000=0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-DOT",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000.0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-BANG",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000!0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-AT",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000@0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-HASH",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000#0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-TILDE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000~0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-NUL",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\u00000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-TAB",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\t0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-NEWLINE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\n0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-CARRIAGE-RETURN",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\r0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-FORM-FEED",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000\f0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-DEL",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-LATIN-E-ACUTE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000é0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-LATIN-E-DECOMPOSED",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "ascii"
+      ],
+      "input": "000000000000é0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-GREEK-OMICRON",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000ο0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-CYRILLIC-A",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000а0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-ARABIC-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000٠0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-FULLWIDTH-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000０0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-EMOJI",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000🐇0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-NOBREAK-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000 0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-ZERO-WIDTH-SPACE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000​0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-ZERO-WIDTH-JOINER",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000‍0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-CHAR-UTF8-BOM-CHAR",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "charset",
+        "unicode"
+      ],
+      "input": "000000000000﻿0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-WRAPPER-NEWLINE-AFTER",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "00000000000000000000000000\n",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-NEWLINE-BEFORE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "\n00000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-SPACE-AFTER",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "00000000000000000000000000 ",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-SPACE-BEFORE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": " 00000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-PREFIX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "pikaid_00000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-SUFFIX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "00000000000000000000000000-id",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-EMBEDDED-BOM",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "00000﻿00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-ALL-UPPERCASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "ZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-WRAPPER-MIXED-CASE",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normalization",
+        "charset"
+      ],
+      "input": "0000000zzzzzzzzzzzzzzzzzzZ",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "noncanonical_input"
+    },
+    {
+      "id": "S-OVERFLOW-FIRST-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "00000007oiylpimjg5u2ca1yps",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-FIRST-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzz7oiylpimjg5u2ca1yps",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-SECOND-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "00000007oiylpimjg5u2ca1ypt",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-SECOND-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzz7oiylpimjg5u2ca1ypt",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-NEARBY-35-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "00000007oiylpimjg5u2ca1yqq",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-NEARBY-35-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzz7oiylpimjg5u2ca1yqq",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-BASE36-BOUNDARY-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-POWER96-PLUS65535-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "00000007oiylpimjg5u2ca3da7",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-POWER96-PLUS65535-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzz7oiylpimjg5u2ca3da7",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-MIDDLE-ZERO",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "0000000lu9haurb9q2x1650zcv",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-MIDDLE-MAX",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "zzzzzzzlu9haurb9q2x1650zcv",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-OVERFLOW-ALL-Z",
+      "requirement_refs": [
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "normative-example",
+        "valid-shape",
+        "randomness-overflow"
+      ],
+      "input": "0000000zzzzzzzzzzzzzzzzzzz",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": true
+      },
+      "reason": "randomness_overflow"
+    },
+    {
+      "id": "S-IMM-NONCANONICAL-VERSION-PREFIX",
+      "input": "v100000000000000000000000000",
+      "reason": "length",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "requirement_refs": [
+        "IMM-001",
+        "FMT-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "immutable-format",
+        "version-marker-rejection"
+      ]
+    },
+    {
+      "id": "S-IMM-NONCANONICAL-VERSION-SUFFIX",
+      "input": "00000000000000000000000000v1",
+      "reason": "length",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "requirement_refs": [
+        "IMM-001",
+        "FMT-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "immutable-format",
+        "version-marker-rejection"
+      ]
+    },
+    {
+      "id": "S-IMM-ALTERNATE-SEPARATED-VERSION",
+      "input": "0000000-v1-0000000000000000000",
+      "reason": "length",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "requirement_refs": [
+        "IMM-001",
+        "FMT-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "immutable-format",
+        "version-marker-rejection"
+      ]
+    },
+    {
+      "id": "S-ASCII-INVALID-001",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00010000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-002",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00020000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-003",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00030000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-004",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00040000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-005",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00050000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-006",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00060000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-007",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00070000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-008",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\b0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-011",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u000b0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-014",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u000e0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-015",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u000f0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-016",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00100000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-017",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00110000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-018",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00120000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-019",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00130000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-020",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00140000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-021",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00150000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-022",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00160000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-023",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00170000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-024",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00180000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-025",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u00190000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-026",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001a0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-027",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001b0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-028",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001c0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-029",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001d0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-030",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001e0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-031",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\u001f0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-034",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000\"0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-036",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000$0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-037",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000%0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-038",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000&0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-039",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000'0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-040",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000(0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-041",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000)0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-042",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000*0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-044",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000,0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-059",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000;0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-060",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000<0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-062",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000>0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-063",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000?0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-066",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000B0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-067",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000C0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-068",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000D0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-069",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000E0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-070",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000F0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-071",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000G0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-072",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000H0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-073",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000I0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-074",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000J0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-075",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000K0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-076",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000L0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-078",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000N0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-079",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000O0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-080",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000P0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-081",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000Q0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-082",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000R0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-083",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000S0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-084",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000T0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-085",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000U0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-086",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000V0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-087",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000W0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-088",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000X0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-089",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000Y0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-090",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000Z0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-091",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000[0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-093",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000]0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-094",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000^0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-096",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000`0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-123",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000{0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-124",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000|0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-ASCII-INVALID-125",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "ascii-exhaustive",
+        "invalid-alphabet"
+      ],
+      "input": "000000000000}0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-MATHEMATICAL-ZERO",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000𝟘0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-ARABIC-INDIC-ONE",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000١0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-CYRILLIC-O",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000о0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-LINE-SEPARATOR",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000 0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-PARAGRAPH-SEPARATOR",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000 0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-CONTROL-NEL",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "0000000000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-EMOJI",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000🦊0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-FULLWIDTH-LATIN-A",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000Ａ0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-CIRCLED-DIGIT",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000①0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-UNICODE-SUPERSCRIPT-ZERO",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "unicode-noncanonical"
+      ],
+      "input": "000000000000⁰0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-LEXICAL-MIXED-CASE",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "mixed-case-or-malformed"
+      ],
+      "input": "0000000000aBcdEf0000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-LEXICAL-UPPERCASE-PREFIX",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "mixed-case-or-malformed"
+      ],
+      "input": "Abcdef00000000000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-LEXICAL-UPPERCASE-SUFFIX",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "mixed-case-or-malformed"
+      ],
+      "input": "00000000000000000000ABCdef",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-LEXICAL-UPPERCASE-ALL",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "mixed-case-or-malformed"
+      ],
+      "input": "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "invalid_alphabet"
+    },
+    {
+      "id": "S-LEXICAL-EMBEDDED-COMBINING",
+      "requirement_refs": [
+        "FMT-001",
+        "FMT-002",
+        "VAL-001",
+        "VAL-002"
+      ],
+      "tags": [
+        "mixed-case-or-malformed"
+      ],
+      "input": "000000000000á0000000000000",
+      "expected": {
+        "strict_conversion": "reject",
+        "boolean_validation": false,
+        "format_only_if_supported": false
+      },
+      "reason": "length"
+    }
+  ]
+}

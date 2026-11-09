@@ -1,0 +1,59 @@
+{
+  "name": "pikaid-cross-language-conformance",
+  "package_revision": "1.0.0",
+  "status": "OFFICIAL",
+  "spec_revision": "1.0.4",
+  "identifier_format": "immutable_unversioned",
+  "mandatory_capabilities": [
+    "generate_string",
+    "text_to_binary",
+    "binary_to_text"
+  ],
+  "conditional_capabilities": [
+    "boolean_validation",
+    "format_only_validation",
+    "parse_components",
+    "parse_datetime",
+    "generate_with_timestamp",
+    "generate_binary",
+    "generate_binary_with_timestamp",
+    "public_compare",
+    "csprng_failure_injection"
+  ],
+  "fixtures": [
+    {
+      "path": "cases/valid.json",
+      "schema": "schemas/valid.schema.json",
+      "cases": 596
+    },
+    {
+      "path": "cases/invalid-string.json",
+      "schema": "schemas/invalid-string.schema.json",
+      "cases": 258
+    },
+    {
+      "path": "cases/invalid-binary.json",
+      "schema": "schemas/invalid-binary.schema.json",
+      "cases": 33
+    },
+    {
+      "path": "cases/ordering.json",
+      "schema": "schemas/ordering.schema.json",
+      "cases": 186
+    },
+    {
+      "path": "cases/generation.json",
+      "schema": "schemas/generation.schema.json",
+      "cases": 12
+    },
+    {
+      "path": "cases/properties.json",
+      "schema": "schemas/properties.schema.json",
+      "cases": 15
+    }
+  ],
+  "requirements_path": "requirements.json",
+  "requirements_schema": "schemas/requirements.schema.json",
+  "coverage_note": "Mandatory fixture checks require a language adapter. Static vectors cannot independently attest production entropy security, time-source correctness, runtime portability, or application-level uniqueness.",
+  "integrity_note": "SHA256SUMS detects accidental modification; pin the exact published Git commit or release asset digest in CI. SHA256SUMS itself is not a signature."
+}

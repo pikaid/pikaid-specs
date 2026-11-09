@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "invalid-string.schema.json",
+  "title": "PikaID conformance invalid-string cases",
+  "type": "object",
+  "properties": {
+    "suite": {
+      "const": "invalid-string"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9-]+$"
+          },
+          "requirement_refs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]+-[0-9]{3}$"
+            }
+          },
+          "input": {
+            "type": "string"
+          },
+          "reason": {
+            "enum": [
+              "length",
+              "invalid_alphabet",
+              "noncanonical_input",
+              "randomness_overflow"
+            ]
+          },
+          "expected": {
+            "type": "object",
+            "properties": {
+              "strict_conversion": {
+                "const": "reject"
+              },
+              "boolean_validation": {
+                "const": false
+              },
+              "format_only_if_supported": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "strict_conversion",
+              "boolean_validation",
+              "format_only_if_supported"
+            ],
+            "additionalProperties": false
+          },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "requirement_refs",
+          "input",
+          "reason",
+          "expected"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "suite",
+    "cases"
+  ],
+  "additionalProperties": false
+}
