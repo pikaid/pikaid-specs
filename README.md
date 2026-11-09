@@ -15,6 +15,7 @@ The identifier format is deliberately simple and stable. **Specification revisio
 
 - **Canonical specification:** this repository.
 - **Official implementations:** See the [pikaid GitHub organization](https://github.com/pikaid) for the current list of official implementations.
+- **Official conformance suite:** [Conformance tests and implementation requirements](conformance/README.md).
 
 ## 1. Identifier anatomy
 
@@ -61,6 +62,32 @@ A compliant implementation:
 6. **MUST** reject invalid input to strict decoding and conversion operations rather than truncate, wrap, or coerce it.
 
 An implementation **MAY** provide convenience APIs, such as generation with a caller-supplied timestamp or database helpers, provided they preserve the format and its validation rules. Caller-supplied timestamps **MUST** still be range-checked, and production generation **MUST** still use a CSPRNG.
+
+### 2.1. Official conformance requirements
+
+The official, language-independent PikaID Conformance Suite is maintained in [`conformance/`](conformance/README.md).
+
+The suite provides the authoritative test vectors, validation rules, property-based checks, and verification procedures for the immutable PikaID identifier format.
+
+**Every official PikaID implementation MUST satisfy the applicable requirements of the official conformance suite.**
+
+Before an implementation can be recognized as official, or changes to an existing official implementation can be merged or released:
+
+1. All mandatory conformance tests MUST pass.
+2. All conditional tests applicable to supported capabilities MUST pass.
+3. Mandatory tests MUST NOT be skipped, weakened, bypassed, or replaced with implementation-specific expectations.
+4. Cryptographically secure randomness and the required security behavior MUST be verified. Automated test success alone does not establish full conformance when mandatory security evidence remains outstanding.
+5. Conformance MUST be checked against an explicitly identified, reproducible version of the official suite.
+
+Implementations MAY expose language-idiomatic public APIs. Identical function names across programming languages are not required, provided all mandatory PikaID capabilities and behaviors are correctly implemented.
+
+Language-specific tests remain necessary and do not replace the official conformance suite.
+
+Changes to the conformance suite itself MUST preserve the normative identifier format and MUST NOT weaken its verification requirements to accommodate a nonconforming implementation.
+
+**An implementation MUST NOT claim official PikaID conformance unless all applicable requirements and release checks have been satisfied.**
+
+See the [Official Conformance Suite](conformance/README.md) for test execution, adapter integration, verification procedures, and release requirements.
 
 ## 3. Generation and conversion
 
@@ -147,7 +174,7 @@ For valid rows, the 34-digit hexadecimal value represents **exactly 17 bytes**: 
 
 A 17-byte binary value with timestamp `0xffffffffff` (for example, `ffffffffff000000000000000000000000`) **MUST** also be rejected: it exceeds the string-format timestamp maximum. Other invalid inputs include uppercase letters, missing/extra characters, non-Base36 characters, and binary buffers not exactly 17 bytes long.
 
-Implementations **SHOULD** test these boundaries, known-answer conversions, malformed inputs, and randomized round trips across their supported environments. Normative shared machine-readable conformance vectors can be published separately without changing the identifier format.
+Official machine-readable conformance tests are maintained in the [PikaID Conformance Suite](conformance/README.md). Implementations seeking official status must satisfy the applicable conformance and release requirements.
 
 ## 8. Design rationale
 
