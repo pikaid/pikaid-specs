@@ -7,8 +7,8 @@ updates:
       interval: "monthly"
     open-pull-requests-limit: 5
 
-  - package-ecosystem: "composer"
-    directory: "/"
+  - package-ecosystem: "pip"
+    directory: "/conformance/tools"
     schedule:
       interval: "monthly"
     open-pull-requests-limit: 5
